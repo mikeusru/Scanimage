@@ -62,6 +62,8 @@ else
             stop(state.yphys.timer.stim_timer);
             delete(state.yphys.timer.stim_timer);
             set(gh.yphys.stimScope.start, 'String', 'Start');
+            %For SpineTracker
+            write_to_SpineTracker('UncagingDone');
     end
 end
 %toc;

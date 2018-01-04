@@ -200,6 +200,8 @@ if strcmp(get(handles.start, 'String'), 'Start')
             yphys_sendStim;
         else
             yphys_uncage;
+            %For SpineTracker
+            write_to_SpineTracker('UncagingDone');
         end
         set(gh.yphys.stimScope.start, 'String', 'Start');
 	else
